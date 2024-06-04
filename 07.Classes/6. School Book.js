@@ -22,9 +22,9 @@ class SchoolBook {
     }
     this.#register[gradeName].push(student);
   }
-  
+
   printRegister() {
-    console.log(this.#register);
+    // console.log(this.#register);
 
     for (const grade in this.#register) {
       const students = this.#register[grade];
