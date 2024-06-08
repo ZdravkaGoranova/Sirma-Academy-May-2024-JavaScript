@@ -6,8 +6,8 @@ function legendaryDuels(string) {
 
     if (
       currentString === '(' ||
-      currentString === '!' ||
-      currentString === '{'
+      currentString === '{' ||
+      (currentString === '!' && (i === 0 || string.charAt(i - 1) !== '!'))
     ) {
       stack.push(currentString);
     } else if (
@@ -27,23 +27,25 @@ function legendaryDuels(string) {
         (currentString === '}' && previousString !== '{') ||
         (currentString === '!' && previousString !== '!')
       ) {
-        console.log('Legendary');
+        console.log('Not Legendary');
         return;
       }
     }
   }
+
   if (stack.length === 0) {
     console.log('Legendary');
   } else {
     console.log('Not Legendary');
   }
 }
+
 legendaryDuels('()()(()())');
-console.log(`------------`);
+console.log('------------');
 legendaryDuels('((!!)(({!!})))');
-console.log(`------------`);
+console.log('------------');
 legendaryDuels('((())');
-console.log(`------------`);
+console.log('------------');
 legendaryDuels('{!}!');
-console.log(`------------`);
+console.log('------------');
 legendaryDuels('({(!!}))');
