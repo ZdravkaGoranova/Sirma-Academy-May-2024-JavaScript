@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      input,
+      label {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Forms</h2>
+
+    <form action="/">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+      <p>Choose your gender:</p>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male" checked />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other" />
+      <input
+        type="submit"
+        value="Submit"
+        style="display: block; margin: 10px"
+      />
+    </form>
+  </body>
+</html>
