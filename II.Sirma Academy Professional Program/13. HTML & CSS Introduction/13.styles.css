@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p, div, a {
+    margin-bottom: 10px;
+}
+
+
+
+p.red {
+  color: red;
+}
+p.green {
+  color: green;
+}
+span.bold {
+  font-weight: bold;
+}
+a.blue {
+  color: blue;
+}
+#italic {
+  font-style: italic;
+  font-weight: bold;
+}
+#chocolate{
+  color:chocolate;
+}
+#blue{
+  color:blue;
+}
+#blueviolet{
+  color:blueviolet;
+}
+
