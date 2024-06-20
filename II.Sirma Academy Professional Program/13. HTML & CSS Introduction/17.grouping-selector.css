@@ -1,0 +1,94 @@
+h1,
+p,
+div,
+span {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p,
+div,
+span {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.spansection {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.paragraf {
+  font-family: 'Courier New', Courier, monospace;
+}
+.paragrafsecond {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#firstparagraf {
+  font-size: smaller;
+}
+#secondparagraf {
+  font-size: medium;
+}
+#thirdparagraf {
+  font-size: xx-large;
+}
+
+p#first {
+  font-style: italic;
+  width: 20em;
+}
+p#second {
+  font-style: oblique;
+  width: 42em;
+}
+p#third {
+  font-style: normal;
+  width: 80em;
+}
+
+p#first-text {
+  text-align: center;
+  width: 50em;
+}
+p#second-text {
+  text-align: end;
+  width: 50em;
+}
+p#third-text {
+  text-align: left;
+  width: 50em;
+}
+
+p#first-Line {
+  line-height: 20px;
+}
+p#second-Line {
+line-height: 60px;
+}
+p#third-Line {
+line-height:100%
+}
+
+p#first-Background {
+background-color: rgb(240, 255, 127);
+}
+p#second-Background {
+background-color: rgb(255, 138, 127);
+}
+p#third-Background {
+background-color: rgb(127, 131, 255);
+}
+
+p#first-Color {
+color: rgb(249, 21, 215);
+}
+p#second-Color {
+color: rgb(53, 69, 208);
+}
+p#third-Color {
+color: rgb(56, 185, 69);
+}
