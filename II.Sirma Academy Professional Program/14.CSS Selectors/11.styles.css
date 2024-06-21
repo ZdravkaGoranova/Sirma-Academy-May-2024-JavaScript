@@ -1,0 +1,14 @@
+input[type='text'] {
+  border-color: blue;
+}
+
+input[type='submit'] {
+  border-color: rgb(255, 127, 217);
+}
+
+a[href="https://example.com"]{
+color: deeppink;
+}
+a[href="https://another.com"]{
+color:rgb(41, 228, 228);
+}
