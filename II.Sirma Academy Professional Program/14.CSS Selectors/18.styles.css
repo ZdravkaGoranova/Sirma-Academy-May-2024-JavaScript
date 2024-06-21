@@ -1,0 +1,22 @@
+.block {
+display: block;
+background-color: aqua;
+}
+
+.inline {
+display: inline;
+background-color: blue;
+}
+
+.inline-block {
+display: inline-block;
+background-color: blueviolet;
+}
+
+.width-example {
+min-width: 5px;
+max-width: 800px;
+background-color: brown;
+/* Set width, min-width, and max-width */
+
+}

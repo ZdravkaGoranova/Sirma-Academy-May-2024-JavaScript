@@ -1,0 +1,7 @@
+div > p {
+  color: rgb(210, 30, 144);
+}
+
+.parent > p {
+  color: blue;
+}
