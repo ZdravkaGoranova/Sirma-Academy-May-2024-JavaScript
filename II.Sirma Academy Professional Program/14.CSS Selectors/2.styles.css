@@ -1,0 +1,10 @@
+/* 2.	Class Selector*/
+.highlight {
+     color: red;
+     background-color: rgb(31, 197, 161);
+}
+
+.common-style {
+     color: blueviolet;
+     background-color: rgb(50, 171, 223);
+}
