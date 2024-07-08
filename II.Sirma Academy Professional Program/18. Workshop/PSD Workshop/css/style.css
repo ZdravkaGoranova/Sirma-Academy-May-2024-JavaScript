@@ -386,6 +386,7 @@ section.tour {
   color: #ffffff;
   font-weight: 700;
   font-family: 'Oswald';
+  padding-bottom: 60px;
 }
 
 .products2 .container2 p {
@@ -472,12 +473,17 @@ height: 210px; */
   height: 974px;
   background-color: #e8631c;
   background-image: url('../assets/quote-img.png');
+  background-position: center;
   background-size: cover;
-  /* background-position: center; */
+  background-repeat: no-repeat;
   position: relative;
 }
+.quote h1,
 .quote p {
-  position: relative;
+    position: relative;
+}
+
+.quote p {
 
   /* height: 483px; */
   font-size: 50px;
@@ -492,7 +498,7 @@ height: 210px; */
   padding-bottom: 80px;
 }
 .quote h1 {
-  position: relative;
+
   font-size: 58px;
   text-transform: uppercase;
   color: #ffffff;
@@ -509,6 +515,11 @@ height: 210px; */
   background-color: #e8631c;
   mix-blend-mode: multiply;
 }
+.quote h1,
+.quote p {
+    position: relative;
+}
+
 /* .subscribe */
 .subscribe {
   height: 597px;
@@ -571,38 +582,57 @@ height: 210px; */
   font-family: 'Oswald';
   text-align: center;
 }
-.subscribe form {
-  /* padding-top: 43px; */
-}
+
 footer {
-  height: 478px;
-height: 974px;
-background-color: #303030;
+  background-color: #303030;
 }
-footer .container {
+
+footer .container-menu {
   max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 90px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.menu h2{
-font-size: 25px;
-text-transform: uppercase;
-color: #ffffff;
-font-weight: 400;
-font-family: "Oswald";
+
+footer .menu-list {
+  display: flex;
+  padding-top: 120px;
+  gap: 26px;
 }
-.menu p{
-width: 958px;
-height: 244px;
-font-size: 25px;
-color: #ffffff;
-font-weight: 400;
-font-family: "Montserrat";
+
+.menu h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Oswald';
+  padding-bottom: 42px;
 }
-.menu-li h2
-{
+.menu p {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  padding-bottom: 42px;
+}
+.menu-li h2 {
   font-size: 33px;
-text-transform: uppercase;
-color: #ffffff;
-font-weight: 400;
-font-family: "Oswald";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Oswald';
+  padding-bottom: 25px;
+}
+.menu {
+  padding-top: 120px;
+  width: 50%;
+}
+.menu-li li {
+  font-size: 25px;
+  line-height: 44px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Montserrat';
 }
