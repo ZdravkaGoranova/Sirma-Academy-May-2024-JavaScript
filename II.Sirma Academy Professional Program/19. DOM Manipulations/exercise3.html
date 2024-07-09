@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Set Paragraph Background Color</title>
+    <style>
+      p {
+        padding: 10px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myParagraph">
+      This is a paragraph. Click the button to change its background color.
+    </p>
+    <form>
+      <label for="color">Choose a background color:</label>
+      <input type="color" id="color" name="color" value="#b73cf6" /><br /><br />
+      <input
+        type="button"
+        onclick="handleColorChange()"
+        value="Change Background Color"
+      />
+    </form>
+
+    <script>
+      function setBackgroundColor(color) {
+        paragraph = document.getElementById('myParagraph');
+        paragraph.style.backgroundColor = color;
+      }
+
+      function handleColorChange() {
+        const color = document.getElementById('color').value;
+        setBackgroundColor(color);
+      }
+    </script>
+  </body>
+</html>
