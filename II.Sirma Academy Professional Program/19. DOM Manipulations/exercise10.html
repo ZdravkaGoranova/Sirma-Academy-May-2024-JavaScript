@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript program to calculate sphere volume</title>
+  </head>
+  <body>
+    <h3>Input radius value and get the volume of a sphere.</h3>
+    <form action="" onsubmit="calculateSphereVolume(event)">
+      <label for="">Radius:</label><br />
+      <input type="radius" id="radius" name="radius" required /><br />
+
+      <label for="volume">Volume:</label><br />
+      <input
+        type="number"
+        id="volume"
+        name="volume"
+        placeholder="0.0000"
+      /><br />
+
+      <button>Calculate</button>
+    </form>
+    <script>
+      function calculateSphereVolume(event) {
+        event.preventDefault();
+        debugger;
+        const radius = document.getElementById('radius').value;
+        const result = (4 / 3) * Math.PI * Math.pow(radius, 3);
+
+        const volume = document.getElementById('volume');
+        volume.value = result.toFixed(4);
+
+        console.log('Radius:', radius);
+        console.log('Volume:', volume.value);
+      }
+    </script>
+  </body>
+</html>
