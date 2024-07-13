@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building a web page that displays a list of items.</title>
+  </head>
+  <body>
+    <div id="list-app">
+      <p>
+        Click on the item to change the text, or click on the button to create a
+        new item.
+      </p>
+      <ul id="items"></ul>
+      <input type="text" id="newItem" value="" />
+      <button type="button" onclick="addNewItems(event)">Create New</button>
+    </div>
+    <script>
+      function addNewItems(event) {
+        event.preventDefault();
+        debugger;
+        const ul = document.getElementById('items');
+        const input = document.getElementById('newItem');
+        const inputValue = input.value;
+
+        if (inputValue !== '') {
+          const newLi = document.createElement('li');
+          newLi.textContent = inputValue;
+
+          ul.appendChild(newLi);
+          input.value = '';
+        } else {
+          alert('Please enter some text.');
+        }
+      }
+    </script>
+  </body>
+</html>
