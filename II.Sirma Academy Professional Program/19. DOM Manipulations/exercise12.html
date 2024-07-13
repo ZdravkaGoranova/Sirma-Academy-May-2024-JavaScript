@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      JavaScript program to get the window width and height (any time the window
+      is resized)
+    </title>
+  </head>
+  <body>
+    <p>Window height: <span id="height"></span></p>
+    <p>Window width: <span id="width"></span></p>
+    <script>
+      function reportWindowSize() {
+     
+        const heightOutput = document.querySelector('#height');
+        const widthOutput = document.querySelector('#width');
+
+        heightOutput.textContent = window.innerHeight;
+        widthOutput.textContent = window.innerWidth;
+      }
+
+      window.onresize = reportWindowSize;
+    </script>
+  </body>
+</html>
