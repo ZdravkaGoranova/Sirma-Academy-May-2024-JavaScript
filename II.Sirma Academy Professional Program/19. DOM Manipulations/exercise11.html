@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      JavaScript program to highlight the bold words of the following paragraph,
+      on mouse over the link
+    </title>
+    <style>
+      .highlight {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="#"
+      id="highlight-link"
+      onmousemove="highlightText(event)"
+      onmouseout="mouseoverText(event)"
+      >Link</a
+    >
+
+    <p class="paragraph">
+      <b>We</b> have just started <b>this</b> section for the users (beginner to
+      intermediate) who <b>want</b> to work with <b>various</b> JavaScript
+      <b>problems</b> and write scripts online to <b>test</b> their JavaScript
+      <b>skill</b>.
+    </p>
+    <script>
+      function highlightText(event) {
+        event.preventDefault();
+        const boldWords = document.querySelectorAll('p b');
+        boldWords.forEach((word) => {
+          word.classList.add('highlight');
+        });
+      }
+
+      function mouseoverText(event) {
+        event.preventDefault();
+        const boldWords = document.querySelectorAll('p b');
+        boldWords.forEach((word) => {
+          word.classList.remove('highlight');
+        });
+      }
+
+      //   document
+      //     .getElementById('highlight-link')
+      //     .addEventListener('mouseover', function () {
+      //       debugger;
+      //       const boldWords = document.querySelectorAll('p b');
+      //       boldWords.forEach((word) => {
+      //         word.classList.add('highlight');
+      //       });
+      //     });
+
+      //   document
+      //     .getElementById('highlight-link')
+      //     .addEventListener('mouseout', function () {
+      //       const boldWords = document.querySelectorAll('p b');
+      //       boldWords.forEach((word) => {
+      //         word.classList.remove('highlight');
+      //       });
+      //     });
+    </script>
+  </body>
+</html>
