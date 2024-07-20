@@ -465,6 +465,133 @@ input[type='password'] {
   gap: 18px;
 }
 
+/* standard-picture-section */
+
+.standard-picture-section {
+  background-color: #f5f5f5;
+}
+
+.standard-picture-title {
+  font-size: 20px;
+  line-height: 43px;
+  color: #212121;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  text-align: start;
+  position: relative;
+}
+.standard-picture-title::after {
+  content: '';
+  display: block;
+
+  width: 65px;
+  height: 3px;
+
+  background-image: url('../assets/images/divider_orange_u7\ copy\ 4.png');
+  background-position: right;
+  background-size: cover;
+  margin: 35px 0;
+}
+
+.standard-picture-container {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.standard-picture-container p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  padding-bottom: 30px;
+}
+/* why-section */
+.why-section {
+  background-color: #ffffff;
+}
+.why-section .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.why-section .container h2 {
+  font-size: 36px;
+  line-height: 43px;
+  color: #212121;
+  font-weight: 400;
+  font-family: 'Raleway';
+  position: relative;
+}
+.why-section .container h2::after {
+  content: '';
+  display: block;
+
+  width: 65px;
+  height: 3px;
+
+  background-image: url('../assets/images/divider_orange_u7\ copy\ 4.png');
+  background-position: right;
+  background-size: cover;
+
+  margin: 35px auto 0;
+}
+.why-section .container p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.why-section .container ul {
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+  gap: 34px;
+}
+.why-section .container ul li p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+.why-section .container ul li h4 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  text-align: center;
+    padding-top: 30px;
+}
+
+.why-icon-wrapper {
+  position: relative;
+  display: inline-block;
+
+}
+
+.why-icon-wrapper .overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: auto;
+}
+.why-icon-wrapper .overlay-icon-key {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: auto;
+}
 /* ............. */
 .tour {
   background-color: #e8631c;
