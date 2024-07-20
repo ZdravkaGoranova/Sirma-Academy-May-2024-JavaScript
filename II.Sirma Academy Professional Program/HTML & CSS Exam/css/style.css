@@ -14,6 +14,7 @@ body {
 section {
   padding: 150px;
   /* min-height: 640px; */
+
   max-height: 596px;
   background-color: #000000;
 }
@@ -166,7 +167,7 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   gap: 210px;
-  /* justify-content:center; */
+  justify-content: center;
   /* opacity: 0.522; */
 }
 
@@ -174,6 +175,11 @@ nav ul li a {
   width: 45%;
 }
 
+.template-logo img {
+  width: 175px;
+  height: 60px;
+  padding-top: 110px;
+}
 .template-title {
   text-align: left;
   text-transform: capitalize;
@@ -266,6 +272,7 @@ nav ul li a {
   background-image: url('../assets/images/background_form_u39.png');
   background-position: center;
   background-size: cover;
+  margin-top: 139px;
   /* justify-content: end; */
 }
 
@@ -294,6 +301,36 @@ input[type='password'] {
   border: none;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+/* social-media */
+
+.social-media {
+  height: 105px;
+  filter: drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.38));
+  background-color: #ffffff;
+}
+
+.social-media h6 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  padding-bottom: 13px;
+}
+.social-media p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+.social-media .container {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+  gap: 95px;
 }
 /* tabs-section */
 
@@ -654,7 +691,7 @@ input[type='password'] {
   background-position: right;
   background-size: cover;
   height: 40px;
-  border-bottom: 1px solid  #f5f5f5;;
+  border-bottom: 1px solid #f5f5f5;
   display: flex;
 
   flex-direction: row;
@@ -670,7 +707,7 @@ input[type='password'] {
 }
 
 .options .professional {
-  margin-top: -35px; 
+  margin-top: -35px;
 }
 
 .options li h6 {
@@ -746,7 +783,6 @@ input[type='password'] {
   font-style: italic;
 }
 
-
 .popular {
   height: 40px;
   background-image: url('../assets/images/u319.png');
@@ -796,7 +832,7 @@ input[type='password'] {
   display: flex;
   justify-content: space-around;
 }
-
+/* 
 @media screen and (max-width: 768px) {
   section {
     padding: 20px 0;
@@ -807,7 +843,7 @@ input[type='password'] {
     justify-content: space-around;
     flex-direction: column;
   }
-}
+} */
 
 .cards .card {
   height: 500px;
@@ -892,5 +928,30 @@ footer {
 }
 
 footer .container {
-  max-width: 1440px;
+  /* max-width: 1400px; */
+  height: 100px;
+
+  margin: 0 auto;
+  /* padding-top: 21px;
+  padding-bottom: 15px; */
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+footer .container p {
+  opacity: 0.502;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+
+.footer-icons {
+  font-size: 24px;
+  color: #cccccc;
+  font-family: 'Font Awesome';
 }
