@@ -1834,7 +1834,7 @@ input[type='password'] {
   }
   .stylish-section .container h2 {
     font-size: 24px;
-            text-align: center;
+    text-align: center;
   }
   .stylish-section .container p {
     font-size: 14px;
@@ -1945,7 +1945,8 @@ input[type='password'] {
   color: #bdbdbd;
   font-weight: 400;
   font-family: 'Open Sans';
-  width: 531px;
+  /* width: 531px; */
+  max-width: 531px;
   height: 35px;
   padding-top: 60px;
   padding-bottom: 20px;
@@ -1956,6 +1957,104 @@ input[type='password'] {
 }
 .contact-us-section .container form textarea {
   height: 157px;
+}
+/* Responsive Design */
+@media screen and (min-width: 1300px) {
+  .contact-us-section .container form input[type='text'],
+  .contact-us-section .container form input[type='email'],
+  .contact-us-section .container form input[type='subject'],
+  .contact-us-section .container form textarea {
+    width: 531px;
+  }
+  .contact-us-section .container form textarea {
+    height: 157px;
+  }
+}
+/* For screens up to 1300px */
+@media screen and (max-width: 1300px) {
+  .contact-us-section {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    height: auto;
+  }
+  .contact-us-section .container form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-us-name-message {
+    flex-direction: column;
+  }
+  .contact-us-name-subject,
+  .contact-us-section .container form textarea {
+    width: 100%;
+  }
+  .contact-us-section .container form input,
+  .contact-us-section .container form textarea {
+    padding: 20px;
+    width: 531px;
+  }
+  .contact-us-section .container form button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+  .contact-us-section {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+  .contact-us-section .container form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-us-name-message {
+    flex-direction: column;
+  }
+  .contact-us-name-subject,
+  .contact-us-section .container form textarea {
+    width: 100%;
+  }
+  .contact-us-section .container form input,
+  .contact-us-section .container form textarea {
+    padding: 15px;
+    width: 100%;
+  }
+  .contact-us-section .container form button {
+    width: 100%;
+    margin-top: 25px;
+  }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+  .contact-us-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  .contact-us-section .container form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-us-name-message {
+    flex-direction: column;
+  }
+  .contact-us-name-subject,
+  .contact-us-section .container form textarea {
+    width: 100%;
+  }
+  .contact-us-section .container form input,
+  .contact-us-section .container form textarea {
+    padding: 10px;
+    width: 100%;
+  }
+  .contact-us-section .container form button {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* footer */
