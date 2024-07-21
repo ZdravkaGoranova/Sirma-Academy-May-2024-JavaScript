@@ -210,6 +210,9 @@ nav ul li a {
   position: relative;
 }
 
+.template-section h5 span{
+  display: none;
+}
 .template-section form {
   width: 374px;
   height: 321px;
