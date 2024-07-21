@@ -823,6 +823,102 @@ input[type='password'] {
   margin: 25px auto 0;
 } */
 
+/* what-section */
+
+.what-section {
+  height: 591px;
+  background-color: #ffffff;
+}
+
+.what-section .container {
+}
+.what-section .container {
+  text-align: center;
+}
+.what-section .container h2 {
+  font-size: 36px;
+  line-height: 43px;
+  color: #212121;
+  font-family: 'Raleway';
+  padding-bottom: 21px;
+}
+
+.what-section .container h2::after {
+  content: '';
+  display: block;
+
+  width: 65px;
+  height: 3px;
+
+  background-image: url('../assets/images/divider_orange_u7\ copy\ 4.png');
+  background-position: right;
+  background-size: cover;
+
+  margin: 30px auto 0;
+}
+.what-section .container p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #86878b;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  padding-bottom: 57px;
+
+}
+.what-section .container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 118px;
+}
+.what-section .container ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.what-paragraph {
+  background-image: url('../assets/images/u229.png');
+  background-position: right;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 21px;
+  padding-bottom: 26px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+}
+.people {
+  display: flex;
+  flex-direction: row;
+
+  gap: 15px;
+  justify-content: start;
+}
+
+.info-people {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+.job {
+  font-size: 14px;
+  color: #86878b;
+  font-weight: 400;
+  font-family: 'Open Sans';
+}
+.name {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 700;
+  font-family: 'Open Sans';
+}
 /* ............. */
 .tour {
   background-color: #e8631c;
