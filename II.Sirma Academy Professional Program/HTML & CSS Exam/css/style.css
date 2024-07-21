@@ -369,7 +369,9 @@ input[type='password'] {
   border-bottom-left-radius: 5px;
 }
 
-/* For screens from 768px to 1200px */
+/* Responsive Design */
+
+/* For screens up to 1300px */
 @media screen and (max-width: 1300px) {
   .template-section {
     flex-direction: column;
@@ -415,7 +417,7 @@ input[type='password'] {
   }
 }
 
-/* For screens from 480px to 768px */
+/* For screens up to 768px */
 @media screen and (max-width: 768px) {
   .template-section {
     flex-direction: column;
@@ -463,7 +465,7 @@ input[type='password'] {
     width: 90%;
   }
 }
-/* For screens to 480px */
+/* For screens up to 480px */
 @media screen and (max-width: 480px) {
   .template-section {
     flex-direction: column;
@@ -526,6 +528,116 @@ input[type='password'] {
   justify-content: center;
   gap: 95px;
 }
+
+/* Responsive Design */
+
+/* For screens up to 1300px */
+@media screen and (max-width: 1300px) {
+  .social-media .container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .social-icons img {
+    width: 280px;
+  }
+  .tabs-section .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tabs-title {
+    padding-bottom: 20px;
+  }
+
+  .tabs-title-container p {
+    padding-bottom: 20px;
+  }
+
+  .tabs-title-container button {
+    width: 100%;
+  }
+
+  .three-tabs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+  .social-media .container {
+    gap: 10px;
+  }
+
+  .tabs-section .container {
+    gap: 10px;
+  }
+  .social-icons img {
+    width: 240px;
+  }
+  .tabs-title {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+  .tabs-title-container p {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  .tabs-title-container button {
+    width: 100%;
+    height: 40px;
+  }
+
+  .three-tabs ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .three-tabs ul li {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+  .social-icons img {
+    width: 240px;
+    margin-bottom: 20px;
+  }
+
+  .social-media h6 {
+    font-size: 16px;
+  }
+
+  .social-media p {
+    font-size: 12px;
+  }
+
+  .tabs-title {
+    font-size: 16px;
+  }
+
+  .tabs-title-container p {
+    font-size: 12px;
+  }
+
+  .tabs-title-container button {
+    font-size: 14px;
+    height: 36px;
+  }
+
+  .three-tabs ul li {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+}
+
 /* tabs-section */
 
 .tabs-section {
@@ -604,6 +716,94 @@ input[type='password'] {
   background-image: url('../assets/images/tab_3_button_u87_mouseover.png');
   background-position: center;
   background-size: cover;
+}
+
+/* Responsive Design */
+
+/* For screens up to 1300px */
+@media screen and (max-width: 1300px) {
+  .tabs-section .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .three-tabs ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .three-tabs ul li {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tabs-title-container {
+    text-align: center;
+  }
+
+  .tabs-title-container p {
+    padding-bottom: 20px;
+  }
+}
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+  .tabs-section .container {
+    gap: 20px;
+  }
+  .tabs-section {
+    padding-top: 40px;
+  }
+  .tabs-title {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .tabs-title-container p {
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  .tabs-title-container button {
+    width: 100%;
+  }
+
+  .three-tabs ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .three-tabs ul li {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+  .tabs-title {
+    font-size: 16px;
+  }
+
+  .tabs-title-container p {
+    font-size: 8px;
+  }
+
+  .tabs-title-container button {
+    font-size: 14px;
+    height: 36px;
+  }
+
+  .three-tabs ul li {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .tabs-section .container {
+    gap: 15px;
+  }
 }
 /* sub-list-section */
 
