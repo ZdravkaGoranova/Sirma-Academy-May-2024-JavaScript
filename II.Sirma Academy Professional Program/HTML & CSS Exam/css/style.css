@@ -65,67 +65,6 @@ nav ul li a {
   color: #ffffff;
 }
 
-/* burger */
-/* .burger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.burger-menu .line {
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  margin: 4px;
-  transition: all 0.3s ease-in;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  nav {
-    justify-content: space-between;
-  }
-
-  nav ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #303030;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-  }
-
-  nav ul li {
-    margin: 15px 0;
-  }
-
-  .burger-menu {
-    display: flex;
-  }
-
-  .menu-toggle:checked ~ ul {
-    display: flex;
-  }
-
-  .menu-toggle:checked + .burger-menu .line:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 5px);
-  }
-
-  .menu-toggle:checked + .burger-menu .line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle:checked + .burger-menu .line:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -5px);
-  }
-} */
-
 /* template-section */
 
 .template-section {
@@ -2069,7 +2008,7 @@ footer .container {
   height: 100px;
 
   margin: 0 auto;
-  /* padding-top: 21px;
+  /* 
   padding-bottom: 15px; */
   background-color: #000000;
   display: flex;
@@ -2092,4 +2031,61 @@ footer .container p {
   font-size: 24px;
   color: #cccccc;
   font-family: 'Font Awesome';
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-icons img {
+    width: 200px;
+    height: auto;
+  }
+  footer .container p {
+    font-size: 20px;
+  }
+}
+
+/* For screens up to 768px */
+@media screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 30px 0;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-icons img {
+    width: 240px;
+    height: auto;
+  }
+  footer .container p {
+    font-size: 11px;
+  }
+}
+
+/* For screens up to 1300px */
+@media screen and (max-width: 1300px) {
+  footer {
+    height: auto;
+    padding: 40px 0;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-icons img {
+    width: 240px;
+    height: auto;
+  }
+  footer .container p {
+    font-size: 12px;
+  }
 }
