@@ -152,6 +152,119 @@ nav ul li a {
   height: 60px;
   padding-top: 110px;
 }
+
+.template-title {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 36px;
+  color: #ffffff;
+  font-family: 'Raleway';
+  position: relative;
+  padding-top: 38px;
+}
+
+.template-title::after {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 35px 0;
+}
+
+.template-section p {
+  text-align: left;
+  margin: 0;
+  opacity: 0.8;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Raleway';
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.template-section button {
+  width: 136px;
+  height: 43px;
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+.template-section h5 {
+  width: 360px;
+  height: 54px;
+  margin-left: 7px;
+  text-align: center;
+  background-image: url('../assets/images/Try Your FREE Trial Today.png'),
+    url('../assets/images/card_header_u257 (1).png');
+  background-size: 70%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  position: relative;
+}
+
+.template-section h5 span {
+  display: none;
+}
+
+.template-section form {
+  width: 374px;
+  height: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  background-image: url('../assets/images/background_form_u39.png');
+  background-position: center;
+  background-size: cover;
+  margin-top: 139px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 70%;
+  border-bottom: 2px solid rgb(192, 190, 190);
+  box-sizing: border-box;
+}
+
+.template-section form button {
+  background-image: url('../assets/images/btn_primary_block_level_u79_mouseover.png');
+  background-position: center;
+  background-size: cover;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  width: 360px;
+  height: 54px;
+  margin-left: 7px;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.template-section .container {
+  width: 45%;
+}
+
+.template-logo img {
+  width: 175px;
+  height: 60px;
+  padding-top: 110px;
+}
 .template-title {
   text-align: left;
   text-transform: capitalize;
@@ -210,7 +323,7 @@ nav ul li a {
   position: relative;
 }
 
-.template-section h5 span{
+.template-section h5 span {
   display: none;
 }
 .template-section form {
@@ -255,6 +368,132 @@ input[type='password'] {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+/* For screens from 768px to 1200px */
+@media screen and (max-width: 1300px) {
+  .template-section {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 150px;
+    padding-bottom: 250px;
+    text-align: center;
+    justify-content: center;
+  }
+  .template-title::after {
+    margin: 20px auto;
+  }
+  .template-section .container,
+  .template-section form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .template-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .template-section p {
+    text-align: center;
+  }
+
+  .template-section button,
+  .template-section form button {
+    width: 97%;
+    margin-left: 10px;
+  }
+
+  .template-section h5 {
+    width: 97%;
+    margin-left: 10px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 90%;
+  }
+}
+
+/* For screens from 480px to 768px */
+@media screen and (max-width: 768px) {
+  .template-section {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 150px;
+    padding-bottom: 220px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .template-section .container,
+  .template-section form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .template-title {
+    font-size: 24px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .template-title::after {
+    margin: 20px auto;
+  }
+  .template-section p {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .template-section button,
+  .template-section form button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .template-section h5 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 90%;
+  }
+}
+/* For screens to 480px */
+@media screen and (max-width: 480px) {
+  .template-section {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 250px;
+    padding-bottom: 220px;
+    text-align: center;
+    justify-content: center;
+  }
+  .template-title {
+    font-size: 20px;
+  }
+
+  .template-section h5 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 90%;
+  }
+
+  .template-section form button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 /* social-media */
 
 .social-media {
