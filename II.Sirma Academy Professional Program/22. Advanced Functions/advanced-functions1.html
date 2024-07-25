@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using bind to Set this</title>
+  </head>
+  <body>
+    <h3>Using bind to Set this</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iusto
+      tempore consequuntur veniam fugiat. Nobis quae distinctio saepe alias
+      tempore ipsum deserunt qui reprehenderit sapiente non possimus doloribus,
+      animi amet.
+    </p>
+  </body>
+  <script>
+    const obj1 = {
+      name: 'Alice',
+      greet: function () {
+        console.log(`Hello, my name is ${this.name}`);
+      },
+    };
+    const obj2 = {
+      name: 'Bob',
+    };
+
+    obj1.greet();
+
+    const greetFunction = obj1.greet;
+    greetFunction(); // Hello, undefined
+
+    const boundGreetFunction = greetFunction.bind(obj2);
+    boundGreetFunction(); // Output: Hello, Bob
+  </script>
+</html>
